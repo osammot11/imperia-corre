@@ -7,6 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Imperia Corre 2027 — mezza maratona, 10 km competitiva e 10 km non competitiva sulla nuova pista ciclabile affacciata sul mare. Domenica 7 marzo 2027.">
     <title>Imperia Corre 2027 — Mezza Maratona e 10 km sul mare</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/logo-simbolo-imperia-corre.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/logo-simbolo-imperia-corre.png') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -17,11 +19,7 @@
 
     <header class="site-header" data-header>
         <a class="brand" href="#top" aria-label="Imperia Corre, torna all'inizio">
-            <svg class="brand-mark" viewBox="0 0 54 54" aria-hidden="true">
-                <circle cx="27" cy="27" r="26" fill="#ff5b35"/>
-                <path d="M8 31c9-8 14-5 20-11 6-5 10-4 18-8M9 38c7-5 14-4 20-8 7-5 11-4 18-5" fill="none" stroke="#fff8e9" stroke-width="3.5" stroke-linecap="round"/>
-            </svg>
-            <span><strong>IMPERIA</strong><em>CORRE</em></span>
+            <img class="brand-logo" src="{{ asset('images/logo-completo.png') }}" alt="" width="450" height="117">
         </a>
 
         <nav class="desktop-nav" aria-label="Navigazione principale">
@@ -65,17 +63,7 @@
 
             <div class="hero-visual" aria-label="Illustrazione di un runner sul lungomare di Imperia">
                 <div class="distance-badge"><strong>21</strong><span>,097 KM</span></div>
-                <svg class="runner" viewBox="0 0 520 640" role="img" aria-hidden="true">
-                    <g fill="none" stroke="#fff8e9" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="312" cy="95" r="42" fill="#fff8e9" stroke="none"/>
-                        <path d="M286 147c-28 37-43 84-45 130l82 30 60-93" stroke-width="40"/>
-                        <path d="M252 179l-89 73-74-17" stroke-width="30"/>
-                        <path d="M322 309l-76 93-88 121" stroke-width="38"/>
-                        <path d="M320 310l73 95 84 45" stroke-width="38"/>
-                        <path d="M157 523l-72 31M477 450l-54 8" stroke-width="30"/>
-                    </g>
-                </svg>
-                <div class="speed-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+                <img class="hero-symbol" src="{{ asset('images/logo-simbolo-imperia-corre.png') }}" alt="" width="121" height="117" fetchpriority="high">
             </div>
 
             <div class="coastline" aria-hidden="true">
@@ -313,8 +301,7 @@
 
     <footer>
         <a class="brand footer-brand" href="#top">
-            <svg class="brand-mark" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="26" fill="#ff5b35"/><path d="M8 31c9-8 14-5 20-11 6-5 10-4 18-8M9 38c7-5 14-4 20-8 7-5 11-4 18-5" fill="none" stroke="#fff8e9" stroke-width="3.5" stroke-linecap="round"/></svg>
-            <span><strong>IMPERIA</strong><em>CORRE</em></span>
+            <img class="brand-logo" src="{{ asset('images/logo-completo.png') }}" alt="Imperia Corre" width="450" height="117" loading="lazy">
         </a>
         <div class="footer-links"><a href="#gare">Gare</a><a href="#percorso">Percorso</a><a href="#quote">Quote</a><a href="#gemellaggio">Gemellaggio</a><a href="#faq">FAQ</a><a href="mailto:info@imperiacorre.it">Contatti</a></div>
         <div class="footer-meta"><span>© {{ date('Y') }} Imperia Corre</span><span>Mezza maratona e 10 km sul mare · 7 marzo 2027</span></div>
