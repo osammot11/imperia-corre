@@ -43,7 +43,6 @@ h1, h2, h3, .brand { font-family: 'Manrope', sans-serif; }
 
 .hero { position: relative; min-height: 810px; height: 100svh; max-height: 980px; overflow: hidden; display: grid; grid-template-columns: 54% 46%; align-items: center; padding: 100px clamp(24px, 7vw, 120px) 80px; background: var(--navy); color: white; isolation: isolate; }
 .hero::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 80px 80px; z-index: -2; mask-image: linear-gradient(to bottom, black, transparent 90%); }
-.hero-sun { position: absolute; right: 18%; top: 17%; width: min(33vw, 470px); aspect-ratio: 1; border-radius: 50%; background: var(--coral); z-index: -1; box-shadow: 0 0 0 55px rgba(255,91,53,.055), 0 0 0 115px rgba(255,91,53,.035); }
 .hero-copy { position: relative; z-index: 3; max-width: 790px; padding-bottom: 35px; }
 .eyebrow { display: flex; align-items: center; gap: 11px; text-transform: uppercase; letter-spacing: .18em; font-size: 12px; font-weight: 700; }
 .eyebrow::before { content: ''; width: 28px; height: 2px; background: var(--coral); }
@@ -53,9 +52,11 @@ h1, h2, h3, .brand { font-family: 'Manrope', sans-serif; }
 .hero-actions { display: flex; align-items: center; gap: 32px; margin-top: 38px; }
 .text-link { font-weight: 600; font-size: 14px; border-bottom: 1px solid rgba(255,255,255,.4); padding-bottom: 6px; }
 .text-link span { margin-left: 8px; color: var(--coral); }
-.hero-visual { position: absolute; right: clamp(-50px, 3vw, 60px); bottom: 0; width: min(48vw, 690px); height: 82%; z-index: 2; }
-.hero-symbol { position: absolute; left: 25%; top: 29%; width: min(42%, 270px); height: auto; filter: drop-shadow(14px 16px 0 rgba(4,29,45,.16)); transform: rotate(-4deg); }
-.distance-badge { position: absolute; right: 2%; top: 1%; width: 145px; height: 145px; display: grid; place-content: center; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; text-align: center; transform: rotate(8deg); z-index: 2; }
+
+.hero-visual { position: absolute; right: clamp(10px, 7vw, 90px); top: 50%; transform: translateY(-52%); z-index: 2; pointer-events: none; }
+.hero-sun { position: relative; width: min(34vw, 470px); aspect-ratio: 1; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 55px rgba(255,91,53,.055), 0 0 0 115px rgba(255,91,53,.035); display: flex; align-items: center; justify-content: center; }
+.hero-symbol { width: 58%; max-width: 270px; height: auto; filter: drop-shadow(14px 16px 0 rgba(4,29,45,.16)); transform: rotate(-4deg); display: block; }
+.distance-badge { position: absolute; right: -20px; top: -20px; width: 145px; height: 145px; display: grid; place-content: center; border: 1px solid rgba(255,255,255,.5); border-radius: 50%; text-align: center; transform: rotate(8deg); z-index: 3; background: rgba(4,29,45,.25); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); pointer-events: auto; }
 .distance-badge strong { font: 800 57px/0.8 'Manrope'; letter-spacing: -.08em; }
 .distance-badge span { margin-top: 9px; font-size: 11px; letter-spacing: .15em; font-weight: 700; }
 .coastline { position: absolute; z-index: 4; height: 175px; left: 0; right: 0; bottom: -1px; }
@@ -231,7 +232,8 @@ footer { background: var(--navy-deep); color: white; padding: 70px clamp(24px, 6
     .hero { grid-template-columns: 1fr; min-height: 800px; padding-top: 120px; align-items: start; }
     .hero-copy { max-width: 760px; }
     .hero h1 { font-size: clamp(64px, 11vw, 100px); }
-    .hero-visual { opacity: .75; right: -80px; width: 57vw; height: 68%; }
+    .hero-visual { opacity: .75; right: -30px; top: 52%; transform: translateY(-50%); }
+    .hero-sun { width: min(52vw, 420px); }
     .hero-copy { z-index: 5; }
     .quick-facts { grid-template-columns: 1fr 1fr; }
     .quick-facts > div:nth-child(2) { border-right: 0; }
@@ -254,9 +256,9 @@ footer { background: var(--navy-deep); color: white; padding: 70px clamp(24px, 6
     .hero h1 { font-size: clamp(52px, 16vw, 74px); margin-top: 20px; }
     .hero-intro { max-width: 88%; font-size: 16px; }
     .hero-actions { align-items: flex-start; flex-direction: column; gap: 22px; margin-top: 30px; }
-    .hero-visual { height: 58%; width: 76vw; right: -29vw; bottom: 20px; opacity: .43; }
-    .hero-symbol { left: 4%; top: 28%; width: 65%; }
-    .hero-sun { width: 75vw; right: -23%; top: 25%; }
+    .hero-visual { right: -22vw; top: auto; bottom: 80px; transform: none; opacity: .43; }
+    .hero-sun { width: 78vw; max-width: 330px; }
+    .hero-symbol { width: 60%; }
     .distance-badge { display: none; }
     .coastline { height: 100px; }
     .quick-facts { padding: 0 20px; }

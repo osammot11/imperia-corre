@@ -50,7 +50,6 @@
 
     <main id="contenuto">
         <section class="hero" id="top">
-            <div class="hero-sun" aria-hidden="true"></div>
             <div class="hero-copy">
                 <p class="eyebrow reveal">Domenica 7 marzo 2027 · ore 09:30</p>
                 <h1 class="reveal">Corri dove<br><span>il mare respira.</span></h1>
@@ -62,8 +61,10 @@
             </div>
 
             <div class="hero-visual" aria-label="Illustrazione di un runner sul lungomare di Imperia">
+                <div class="hero-sun" aria-hidden="true">
+                    <img class="hero-symbol" src="{{ asset('images/logo-simbolo-imperia-corre.png') }}" alt="" width="121" height="117" fetchpriority="high">
+                </div>
                 <div class="distance-badge"><strong>21</strong><span>,097 KM</span></div>
-                <img class="hero-symbol" src="{{ asset('images/logo-simbolo-imperia-corre.png') }}" alt="" width="121" height="117" fetchpriority="high">
             </div>
 
             <div class="coastline" aria-hidden="true">
