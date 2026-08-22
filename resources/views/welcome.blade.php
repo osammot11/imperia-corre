@@ -288,8 +288,8 @@
                     <figcaption><span>Il traguardo</span> I premi dell'edizione 2026</figcaption>
                 </figure>
                 <figure class="photo-card reveal">
-                    <img src="{{ asset('images/vincitori-imperia-corre-2026.jpeg') }}" width="1200" height="1600" loading="lazy" decoding="async" alt="I vincitori sul podio di Imperia Corre 2026">
-                    <figcaption><span>I protagonisti</span> I vincitori sul podio</figcaption>
+                    <img src="{{ asset('images/giorgio-calcaterra-ultramaratoneta.jpeg') }}" width="1200" height="1600" loading="lazy" decoding="async" alt="Giorgio Calcaterra al centro durante le premiazioni di Imperia Corre">
+                    <figcaption><span>Ospiti d'eccezione</span> Giorgio Calcaterra · 3 titoli mondiali nella 100 km e 12 Passatore consecutivi</figcaption>
                 </figure>
             </div>
         </section>
