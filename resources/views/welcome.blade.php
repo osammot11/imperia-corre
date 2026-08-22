@@ -78,7 +78,7 @@
         <section class="quick-facts" aria-label="Informazioni principali">
             <div><span>01</span><p>Data</p><strong>7 marzo 2027</strong></div>
             <div><span>02</span><p>Gare</p><strong>21 km + 10 km</strong></div>
-            <div><span>03</span><p>Partenza</p><strong>Ore 09:30</strong></div>
+            <div><span>03</span><p>Partenza</p><strong>Campo di Atletica</strong></div>
             <div><span>04</span><p>Scenario</p><strong>Ciclabile sul mare</strong></div>
         </section>
 
@@ -108,7 +108,7 @@
                 <article class="race-card featured">
                     <div class="race-top"><span>Gara regina</span><strong>21,097</strong><small>km</small></div>
                     <h3>Mezza Maratona</h3>
-                    <p>La sfida completa: un percorso piatto e veloce tra Imperia, il mare e la Riviera.</p>
+                    <p>La sfida completa: dalla ciclabile davanti al Campo di Atletica fino a San Lorenzo e Diano Marina, con arrivo in pista.</p>
                     <ul><li>Competitiva</li><li>Partenza ore 09:30</li><li>Da €25</li></ul>
                     <a href="#quote">Scopri le quote <span>↓</span></a>
                 </article>
@@ -133,15 +133,15 @@
             <div class="route-copy">
                 <div class="section-label light reveal"><span>03</span> Il percorso</div>
                 <h2 class="reveal">Il tuo passo.<br><em>Il nostro mare.</em></h2>
-                <p class="reveal">Da Imperia verso Diano Marina e ritorno, sulla nuova pista ciclabile completamente messa in sicurezza. Un percorso interamente pianeggiante, veloce e costantemente affacciato sul Mediterraneo.</p>
+                <p class="reveal">Si parte sulla ciclabile davanti al Campo di Atletica. Dopo 2,2 km in direzione San Lorenzo al Mare, il primo giro di boa immette nel lungo tratto verso Diano Marina. Da qui, un secondo giro di boa riporta gli atleti sulla stessa ciclabile fino allo spettacolare arrivo in pista.</p>
                 <div class="route-points reveal">
-                    <div><i></i><span>Fondo</span><strong>Nuova pista ciclabile</strong></div>
-                    <div><i></i><span>Profilo</span><strong>Interamente pianeggiante</strong></div>
-                    <div><i></i><span>Direzione</span><strong>Diano Marina e ritorno</strong></div>
-                    <div><i></i><span>Scenario</span><strong>Tra cielo e mare</strong></div>
+                    <div><i></i><span>Partenza</span><strong>Ciclabile davanti al Campo di Atletica</strong></div>
+                    <div><i></i><span>Primo tratto</span><strong>2,2 km verso San Lorenzo al Mare</strong></div>
+                    <div><i></i><span>Dopo il giro di boa</span><strong>Ciclabile fino a Diano Marina</strong></div>
+                    <div><i></i><span>Rientro</span><strong>Giro di boa e arrivo in pista</strong></div>
                 </div>
             </div>
-            <div class="route-map reveal" aria-label="Anteprima grafica del percorso">
+            <div class="route-map reveal" aria-label="Schema del percorso da Imperia verso San Lorenzo al Mare e Diano Marina, con arrivo al Campo di Atletica">
                 <svg viewBox="0 0 680 640" aria-hidden="true">
                     <path class="map-land" d="M83 30c82 70 126 92 210 102 62 8 86 53 140 77 73 32 104-1 171 53 35 28 51 76 32 120-24 55-78 58-98 119-15 46 5 75-28 109H44V83Z"/>
                     <path class="map-road-shadow" d="M92 159c100 6 111 128 226 131 100 3 142-82 228-37 82 43 41 126-28 139-72 13-143-43-231-3-55 25-87 70-164 66"/>
@@ -149,11 +149,11 @@
                     <circle cx="92" cy="159" r="12"/>
                     <circle cx="123" cy="455" r="12"/>
                 </svg>
-                <span class="map-label label-start">START</span>
-                <span class="map-label label-finish">FINISH</span>
+                <span class="map-label label-start">PARTENZA · CICLABILE</span>
+                <span class="map-label label-finish">ARRIVO · IN PISTA</span>
                 <span class="map-place place-oneglia">DIANO MARINA</span>
-                <span class="map-place place-porto">IMPERIA</span>
-                <div class="map-note">Percorso costiero<br><small>nuova pista ciclabile</small></div>
+                <span class="map-place place-porto">SAN LORENZO AL MARE · 2,2 KM</span>
+                <div class="map-note">Andata e ritorno<br><small>sempre sulla pista ciclabile</small></div>
             </div>
         </section>
 
@@ -232,7 +232,7 @@
                 <article>
                     <span class="program-num">03</span>
                     <div><small>Domenica 7 marzo · ore 09:30</small><h3>Partenza delle gare</h3></div>
-                    <p>Mezza maratona, 10 km competitiva e 10 km non competitiva.</p>
+                    <p>Sulla ciclabile antistante il Campo di Atletica: mezza maratona, 10 km competitiva e 10 km non competitiva.</p>
                     <span class="program-arrow">↗</span>
                 </article>
                 <article>
@@ -244,13 +244,63 @@
             </div>
         </section>
 
+        <section class="gallery-section section" id="gallery">
+            <div class="section-label reveal"><span>06</span> Edizione 2026</div>
+            <div class="gallery-head">
+                <h2 class="reveal">La corsa,<br><em>vissuta davvero.</em></h2>
+                <p class="reveal">Volti, partenze e traguardi dell'ultima edizione, insieme agli scorci di mare che rendono unico ogni chilometro corso a Imperia.</p>
+            </div>
+            <div class="photo-grid">
+                <figure class="photo-card reveal">
+                    <img src="{{ asset('images/partenza-imperia-corre-2026-2.jpeg') }}" width="1600" height="1200" loading="lazy" decoding="async" alt="Gli atleti in testa alla partenza di Imperia Corre 2026">
+                    <figcaption><span>La gara</span> Il primo passo verso il traguardo</figcaption>
+                </figure>
+                <figure class="photo-card reveal">
+                    <img src="{{ asset('images/pista-ciclabile.jpeg') }}" width="1200" height="1600" loading="lazy" decoding="async" alt="La pista ciclabile di Imperia accanto al porto e alle palme">
+                    <figcaption><span>Il percorso</span> La ciclabile tra porto e mare</figcaption>
+                </figure>
+                <figure class="photo-card reveal">
+                    <img src="{{ asset('images/torre-di-prarola.jpeg') }}" width="1200" height="1600" loading="lazy" decoding="async" alt="La Torre di Prarola illuminata sul mare di Imperia">
+                    <figcaption><span>Imperia</span> Torre di Prarola</figcaption>
+                </figure>
+                <figure class="photo-card reveal">
+                    <img src="{{ asset('images/partecipanti-imperia-corre-2026.jpeg') }}" width="1600" height="1200" loading="lazy" decoding="async" alt="I partecipanti di Imperia Corre 2026 al Campo di Atletica">
+                    <figcaption><span>La comunità</span> Insieme al Campo di Atletica</figcaption>
+                </figure>
+                <figure class="photo-card reveal">
+                    <img src="{{ asset('images/porto-imperia.jpg') }}" width="1600" height="1067" loading="lazy" decoding="async" alt="Il porto di Imperia al tramonto">
+                    <figcaption><span>Imperia</span> Il porto al tramonto</figcaption>
+                </figure>
+                <figure class="photo-card reveal">
+                    <img src="{{ asset('images/partenza-imperia-corre-2026.jpeg') }}" width="1600" height="1200" loading="lazy" decoding="async" alt="Il gruppo dei runner alla partenza di Imperia Corre 2026">
+                    <figcaption><span>La partenza</span> Energia sulla linea del via</figcaption>
+                </figure>
+                <figure class="photo-card reveal">
+                    <img src="{{ asset('images/pista-ciclabile-1.jpeg') }}" width="387" height="516" loading="lazy" decoding="async" alt="La pista ciclabile affacciata direttamente sul mare">
+                    <figcaption><span>Il percorso</span> Correre a un passo dal mare</figcaption>
+                </figure>
+                <figure class="photo-card reveal">
+                    <img src="{{ asset('images/partenza-imperia-corre-2026-1.jpeg') }}" width="1600" height="1200" loading="lazy" decoding="async" alt="I runner durante la partenza di Imperia Corre 2026">
+                    <figcaption><span>La gara</span> Ritmo, concentrazione, entusiasmo</figcaption>
+                </figure>
+                <figure class="photo-card reveal">
+                    <img src="{{ asset('images/premi-imperia-corre-2026.jpeg') }}" width="1600" height="1200" loading="lazy" decoding="async" alt="Coppe e premi preparati per Imperia Corre 2026">
+                    <figcaption><span>Il traguardo</span> I premi dell'edizione 2026</figcaption>
+                </figure>
+                <figure class="photo-card reveal">
+                    <img src="{{ asset('images/vincitori-imperia-corre-2026.jpeg') }}" width="1200" height="1600" loading="lazy" decoding="async" alt="I vincitori sul podio di Imperia Corre 2026">
+                    <figcaption><span>I protagonisti</span> I vincitori sul podio</figcaption>
+                </figure>
+            </div>
+        </section>
+
         <section class="quote-section">
             <div class="quote-track" aria-hidden="true"><span>CORRI · RESPIRA · VIVI · </span><span>CORRI · RESPIRA · VIVI · </span></div>
             <blockquote class="reveal">“Ogni traguardo<br>inizia da un <em>passo.</em>”</blockquote>
         </section>
 
         <section class="faq-section section" id="faq">
-            <div class="section-label reveal"><span>06</span> Domande frequenti</div>
+            <div class="section-label reveal"><span>07</span> Domande frequenti</div>
             <div class="faq-grid">
                 <h2 class="reveal">Tutto quello<br>che c'è da <em>sapere.</em></h2>
                 <div class="accordion reveal">
@@ -261,6 +311,10 @@
                     <details>
                         <summary>Quali gare posso scegliere?<span>+</span></summary>
                         <p>Mezza Maratona competitiva da 21,097 km, 10 km competitiva e 10 km non competitiva aperta a chi vuole vivere il percorso senza la pressione della gara ufficiale.</p>
+                    </details>
+                    <details>
+                        <summary>Come si sviluppa il percorso?<span>+</span></summary>
+                        <p>La partenza è sulla ciclabile davanti al Campo di Atletica. Si corre per 2,2 km verso San Lorenzo al Mare, si effettua il giro di boa e si prosegue sulla ciclabile fino a Diano Marina. Dopo il secondo giro di boa si rientra lungo la stessa ciclabile, con arrivo direttamente in pista al Campo di Atletica.</p>
                     </details>
                     <details>
                         <summary>Dove si ritira il pettorale?<span>+</span></summary>
@@ -285,17 +339,8 @@
             <div class="signup-card reveal">
                 <p class="eyebrow">7 marzo 2027 · Imperia</p>
                 <h2>La corsa comincia <em>qui.</em></h2>
-                <p>Le iscrizioni sono aperte. Blocca la quota migliore oppure lascia la tua email per ricevere aggiornamenti e comunicazioni sulla gara.</p>
+                <p>Le iscrizioni sono aperte. Blocca la quota migliore e assicurati un pettorale per correre sul mare di Imperia.</p>
                 <a class="button signup-main-button" href="https://iscrizioni.imperiacorre.it/" target="_blank" rel="noopener">Iscriviti alla gara <span>↗</span></a>
-                <div class="signup-divider"><span>oppure ricevi gli aggiornamenti</span></div>
-                <form class="signup-form" action="{{ route('newsletter.store') }}" method="post" data-signup-form>
-                    @csrf
-                    <label class="sr-only" for="email">Il tuo indirizzo email</label>
-                    <input id="email" name="email" type="email" placeholder="La tua email" autocomplete="email" required>
-                    <button class="button" type="submit">Avvisami <span>↗</span></button>
-                </form>
-                <p class="form-message" data-form-message aria-live="polite"></p>
-                <small>Iscrivendoti accetti di ricevere aggiornamenti sull'evento. Nessuno spam.</small>
             </div>
         </section>
     </main>

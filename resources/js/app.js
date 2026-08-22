@@ -45,29 +45,3 @@ document.querySelectorAll('.accordion details').forEach((detail) => {
     });
 });
 
-document.querySelector('[data-signup-form]')?.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const message = document.querySelector('[data-form-message]');
-    const button = form.querySelector('button');
-
-    button.disabled = true;
-    if (message) message.textContent = 'Un attimo...';
-
-    try {
-        const response = await fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: { 'Accept': 'application/json' },
-        });
-        const data = await response.json();
-
-        if (!response.ok) throw new Error(data.message || 'Non è stato possibile completare l’iscrizione.');
-        if (message) message.textContent = data.message;
-        form.reset();
-    } catch (error) {
-        if (message) message.textContent = error.message;
-    } finally {
-        button.disabled = false;
-    }
-});
