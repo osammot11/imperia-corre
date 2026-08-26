@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Imperia Corre 2027 — mezza maratona, 10 km competitiva e 10 km non competitiva sulla nuova pista ciclabile affacciata sul mare. Domenica 7 marzo 2027.">
     <title>Imperia Corre 2027 — Mezza Maratona e 10 km sul mare</title>
+    <link rel="canonical" href="{{ rtrim(config('app.url'), '/') }}">
     <link rel="icon" type="image/png" href="{{ asset('images/logo-simbolo-imperia-corre.png') }}">
     <link rel="apple-touch-icon" href="{{ asset('images/logo-simbolo-imperia-corre.png') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
